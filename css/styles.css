@@ -1,0 +1,101 @@
+/* ------------------STYLES--------------------- */
+
+:root {
+    --clr-blue-900: #1B244A;
+    --clr-blue-300: #9AABD8;
+    --clr-red-500: #F94F6D;
+    --clr-white-500: #EEEEEE;
+    --clr-black-500: #080001;
+}
+
+
+body {
+    font-family: "Lora", serif;
+    /* font-family: "Orbitron", serif; */
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--clr-blue-300);
+
+}
+
+
+
+/* ---------TYPOEGRAPHY---------------------------- */
+.container__title {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: var(--clr-white-500);
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+
+.container__score p {
+    font-size: 2rem;
+    font-family: "Orbitron", serif;
+    font-weight: 900;
+    color: var(--clr-red-500);
+
+}
+
+.btn {
+    outline: none;
+    border: 1px solid var(--clr-blue-300);
+    color: var(--clr-blue-300);
+    background-color: inherit;
+    font-size: 1rem;
+    border-radius: 0.2em;
+    padding: 0.2em 0.5em;
+    margin-top: 0.5em;
+    font-weight: 400;
+    font-family: "Orbitron", serif;
+
+}
+
+.btn:hover,
+.btn:focus {
+    color: var(--clr-red-500);
+    outline: 1px solid var(--clr-white-500);
+    cursor: pointer;
+}
+
+/* ----------LAYOUT------------------ */
+.card {
+    background-color: var(--clr-blue-900);
+    max-width: 650px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.5em;
+    border-radius: 0.5em;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex: 1;
+}
+
+.container__score {
+    background-color: var(--clr-black-500);
+    padding: 0.5em 1em;
+    min-width: 120px;
+    text-align: center;
+}
+
+.container__btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <title>Basketball score</title>
+  </head>
+  <body>
+    <main class="card">
+      <!-- ------------HOME SECTION--------------- -->
+      <section class="container container--home">
+        <h1 class="container__title">home</h1>
+        <div class="container__score">
+          <p class="container__score--home" id="home-score">0</p>
+        </div>
+        <div class="container__btns">
+          <button class="btn container__btn--one" onclick="addOneHome()">
+            +1
+          </button>
+          <button class="btn container__btn--two" onclick="addTwoHome()">
+            +2
+          </button>
+          <button class="btn container__btn--three" onclick="addThreeHome()">
+            +3
+          </button>
+        </div>
+      </section>
+
+      <!-- ----------GUEST SECTION------------------------- -->
+      <section class="container container--guest">
+        <h1 class="container__title">guest</h1>
+        <div class="container__score">
+          <p class="container__score--guest" id="guest-score">0</p>
+        </div>
+        <div class="container__btns">
+          <button class="btn container__btn--one" onclick="addOneGuest()">
+            +1
+          </button>
+          <button class="btn container__btn--two" onclick="addTwoGuest()">
+            +2
+          </button>
+          <button class="btn container__btn--three" onclick="addThreeGuest()">
+            +3
+          </button>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
