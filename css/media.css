@@ -1,13 +1,27 @@
-@media (max-width:350px) {
+@media (max-width:450px) {
+
+    .header {
+        padding: 2em 0;
+    }
+
 
     .header__title {
         font-size: 1.2rem;
+    }
+
+    .header__description {
+        max-height: 1rem;
     }
 
     .card {
         display: flex;
         flex-direction: column;
 
+    }
+
+    .container {
+        padding-bottom: 2em;
+        border-bottom: 1px solid rgba(154, 171, 216, 0.5);
     }
 
     .container h2 {
@@ -21,20 +35,27 @@
     .container__score p {
         font-size: 1.5rem;
     }
+
+    .container--reset {
+        align-self: center;
+        border: none;
+        padding-bottom: 2em;
+        border-bottom: 1px solid rgba(154, 171, 216, 0.5);
+        width: 100%;
+        ;
+    }
 }
 
 
-@media (min-width:650px) {
+@media (min-width:450px) {
 
     .header {
         padding: 1em 0;
     }
 
-    .card {
-        padding: 2.5em;
-    }
-
     .container__btns {
         gap: 1.5rem;
+
     }
+
 }

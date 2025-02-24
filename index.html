@@ -20,7 +20,9 @@
     <div class="wrapper">
       <header class="header">
         <h1 class="header__title">Basketball Scoreboard</h1>
-        <p class="header__description" id="leader">Home is leading the game.</p>
+        <p class="header__description" id="leader">
+          Let the Scoreboard Do the Talking
+        </p>
       </header>
       <main class="card">
         <!-- ------------HOME SECTION--------------- -->
@@ -50,7 +52,16 @@
             </button>
           </div>
         </section>
-
+        <!-- RESET BUTTON SECTION  -->
+        <section class="container container--reset">
+          <button
+            class="btn container__btn--reset"
+            id="reset-btn"
+            onclick="resetScore()"
+          >
+            RESET
+          </button>
+        </section>
         <!-- ----------GUEST SECTION------------------------- -->
         <section class="container container--guest">
           <h2 class="container__title">guest</h2>

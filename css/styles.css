@@ -43,7 +43,10 @@ body {
     font-weight: 700;
     font-family: "Orbitron", serif;
     letter-spacing: 1.5px;
+    min-height: 1.5rem;
+
 }
+
 
 .container__title {
     font-size: 1.5rem;
@@ -64,17 +67,16 @@ body {
 }
 
 .btn {
-    outline: none;
-    border: 1px solid var(--clr-blue-300);
-    color: var(--clr-blue-300);
+    padding: 0.5em 1em;
     background-color: inherit;
-    font-size: 1rem;
-    border-radius: 0.2em;
-    padding: 0.2em 0.5em;
+    color: var(--clr-blue-300);
+    border: none;
+    outline: 2px solid var(--clr-blue-300);
+    border-radius: 0.5em;
+    font-family: "Orbitron", serif;
+    font-size: 0.8rem;
     margin-top: 0.5em;
     font-weight: 400;
-    font-family: "Orbitron", serif;
-
 }
 
 .btn:hover,
@@ -111,8 +113,6 @@ body {
     padding: 1.5em;
     border-radius: 0 0 0.5em 0.5em;
 
-
-
 }
 
 .container {
@@ -133,6 +133,10 @@ body {
 .container__btns {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    justify-content: center;
+    gap: 1rem;
+}
 
+.container--reset {
+    align-self: flex-end;
 }
