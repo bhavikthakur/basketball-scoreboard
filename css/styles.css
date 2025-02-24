@@ -99,7 +99,7 @@ body {
 .header {
     padding: 0.5em 0;
     background-color: var(--clr-white-500);
-    color: #008bf8;
+    color: var(--clr-blue-500);
     border-radius: 0.5em 0.5em 0 0;
 }
 
