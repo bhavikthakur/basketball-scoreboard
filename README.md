@@ -21,7 +21,7 @@ A simple and interactive basketball scoreboard built with HTML, CSS, and JavaScr
 - **CSS3** - Modern styling with a mobile-first approach.  <br>
 - **Google Fonts** - Used Lora and Orbitron for typography.    <br>
 - **CSS  Media Queries** - Ensured responsiveness for different screen sizes.
-
+- **JavaScript (DOM Manipulation)** - Basic event listener to update the scores
 ## 📂 Folder Structure  
 /project-folder <br>
 │── /css <br>
