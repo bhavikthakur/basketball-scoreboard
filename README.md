@@ -37,7 +37,7 @@ A simple and interactive basketball scoreboard built with HTML, CSS, and JavaScr
 ## 🔧 Setup & Usage  
 1. Clone this repository:  
    ```bash
-https://github.com/bhavikthakur/basketball-scoreboard.git  
+   git clone https://github.com/bhavikthakur/basketball-scoreboard.git    
 2. Open index.html in your browser. 
 
 ## 🔓 Future enhancement  
