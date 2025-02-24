@@ -15,6 +15,7 @@ body {
     font-size: 1rem;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     min-height: 100vh;
     background-color: var(--clr-blue-300);
@@ -24,6 +25,25 @@ body {
 
 
 /* ---------TYPOEGRAPHY---------------------------- */
+
+
+.header__title {
+
+    text-align: center;
+    margin-bottom: 0.5em;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    color: var(--clr-blue-900)
+}
+
+.header__description {
+
+    font-weight: 700;
+    font-family: "Orbitron", serif;
+    letter-spacing: 1.5px;
+}
+
 .container__title {
     font-size: 1.5rem;
     text-transform: uppercase;
@@ -31,8 +51,8 @@ body {
     color: var(--clr-white-500);
     text-align: center;
     letter-spacing: 2px;
-}
 
+}
 
 .container__score p {
     font-size: 2rem;
@@ -63,17 +83,34 @@ body {
     cursor: pointer;
 }
 
+
+
 /* ----------LAYOUT------------------ */
+.wrapper {
+    width: 90%;
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+
+
+}
+
+.header {
+    padding: 0.5em 0;
+    background-color: var(--clr-white-500);
+    color: #008bf8;
+    border-radius: 0.5em 0.5em 0 0;
+}
+
 .card {
     background-color: var(--clr-blue-900);
-    max-width: 650px;
-    width: 90%;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     gap: 1rem;
     padding: 1.5em;
-    border-radius: 0.5em;
+    border-radius: 0 0 0.5em 0.5em;
+
+
 
 }
 
@@ -90,7 +127,6 @@ body {
     background-color: var(--clr-black-500);
     padding: 0.5em 1em;
     min-width: 120px;
-    text-align: center;
 }
 
 .container__btns {

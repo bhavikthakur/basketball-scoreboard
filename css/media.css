@@ -1,0 +1,40 @@
+@media (max-width:350px) {
+
+    .header__title {
+        font-size: 1.2rem;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .container h2 {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        font-size: 0.8rem;
+    }
+
+    .container__score p {
+        font-size: 1.5rem;
+    }
+}
+
+
+@media (min-width:650px) {
+
+    .header {
+        padding: 1em 0;
+    }
+
+    .card {
+        padding: 2.5em;
+    }
+
+    .container__btns {
+        gap: 1.5rem;
+    }
+}

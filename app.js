@@ -1,28 +1,27 @@
 let homeScore = document.getElementById("home-score");
 let guestScore = document.getElementById("guest-score");
+let leader = document.getElementById("leader");
+
 let homeTotal = 0;
 let guestTotal = 0;
-function addOneHome() {
-  homeTotal++;
-  homeScore.innerText = homeTotal;
+
+function compareLeader() {
+  if (homeTotal > guestTotal) {
+    leader.innerText = `Home is leading the game. 🔥`;
+  } else if (homeTotal < guestTotal) {
+    leader.innerText = `Guest is leading the game. 🔥`;
+  } else {
+    leader.innerText = `${homeTotal} : ${guestTotal}- Equal scores ⚖️`;
+  }
 }
-function addTwoHome() {
-  homeTotal += 2;
-  homeScore.innerText = homeTotal;
-}
-function addThreeHome() {
-  homeTotal += 3;
-  homeScore.innerText = homeTotal;
-}
-function addOneGuest() {
-  guestTotal++;
-  guestScore.innerText = guestTotal;
-}
-function addTwoGuest() {
-  guestTotal += 2;
-  guestScore.innerText = guestTotal;
-}
-function addThreeGuest() {
-  guestTotal += 3;
-  guestScore.innerText = guestTotal;
+
+function updateTeamScore(team, points) {
+  if (team === "home") {
+    homeTotal += points;
+    homeScore.innerText = homeTotal;
+  } else {
+    guestTotal += points;
+    guestScore.innerText = guestTotal;
+  }
+  compareLeader();
 }
